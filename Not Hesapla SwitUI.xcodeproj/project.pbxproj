@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4341C5612A00EEAC00363192 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341C5602A00EEAC00363192 /* SecondPage.swift */; };
 		43BC044E29FDBE36005B295E /* Not_Hesapla_SwitUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC044D29FDBE36005B295E /* Not_Hesapla_SwitUIApp.swift */; };
-		43BC045029FDBE36005B295E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC044F29FDBE36005B295E /* ContentView.swift */; };
 		43BC045229FDBE37005B295E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC045129FDBE37005B295E /* Assets.xcassets */; };
 		43BC045529FDBE37005B295E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC045429FDBE37005B295E /* Preview Assets.xcassets */; };
+		43BC045E29FDBEB8005B295E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC045D29FDBEB8005B295E /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4341C5602A00EEAC00363192 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
 		43BC044A29FDBE36005B295E /* Not Hesapla SwitUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Not Hesapla SwitUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC044D29FDBE36005B295E /* Not_Hesapla_SwitUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Not_Hesapla_SwitUIApp.swift; sourceTree = "<group>"; };
-		43BC044F29FDBE36005B295E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43BC045129FDBE37005B295E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BC045429FDBE37005B295E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43BC045D29FDBEB8005B295E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				43BC044D29FDBE36005B295E /* Not_Hesapla_SwitUIApp.swift */,
-				43BC044F29FDBE36005B295E /* ContentView.swift */,
+				43BC045D29FDBEB8005B295E /* Home.swift */,
+				4341C5602A00EEAC00363192 /* SecondPage.swift */,
 				43BC045129FDBE37005B295E /* Assets.xcassets */,
 				43BC045329FDBE37005B295E /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BC045029FDBE36005B295E /* ContentView.swift in Sources */,
+				43BC045E29FDBEB8005B295E /* Home.swift in Sources */,
 				43BC044E29FDBE36005B295E /* Not_Hesapla_SwitUIApp.swift in Sources */,
+				4341C5612A00EEAC00363192 /* SecondPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
