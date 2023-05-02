@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct FirstPageVC: View {
     @State private var isPresented: Bool = false
     @State private var text: String = ""
     
@@ -48,7 +48,7 @@ struct Home: View {
             Spacer()
         }
         .fullScreenCover(isPresented: $isPresented, content: {
-            SecondPage()
+            MainVC()
         })
     }
 }
@@ -56,7 +56,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        FirstPageVC()
     }
 }
 
