@@ -62,29 +62,27 @@ struct ExtractedView: View {
             
             NavigationLink(destination: NewCalculateVC()) {
                 Text("Yeni Hesaplama")
-                    .font(Font.system(size: 25))
-                    .foregroundColor(.white)
-                    .padding(.vertical, 80)
-                    .padding(.horizontal, 80)
-                    .background(
-                        RoundedRectangle(cornerRadius: 30)
-                            .fill(Color.blue)
-                    )
+                    .font(.title2.bold())
+                    .frame(maxWidth: .infinity, maxHeight: 170)
+                    .padding()
+                    .background(Color(.blue))
+                    .foregroundColor(Color(.white))
+                    .cornerRadius(30)
             }
-            .frame(height: 220)
+            .padding(.horizontal)
+            .padding(.vertical, 10)
             
             NavigationLink(destination: NewCalculateVC()) {
                 Text("Derslerim")
-                    .font(Font.system(size: 25))
-                    .foregroundColor(.white)
-                    .padding(.vertical, 80)
-                    .padding(.horizontal, 114)
-                    .background(
-                        RoundedRectangle(cornerRadius: 30)
-                            .fill(Color.blue)
-                    )
+                    .font(.title2.bold())
+                    .frame(maxWidth: .infinity, maxHeight: 170)
+                    .padding()
+                    .background(Color(.blue))
+                    .foregroundColor(Color(.white))
+                    .cornerRadius(30)
             }
-            .frame(height: 200)
+            .padding(.horizontal)
+            .padding(.vertical, 10)
             
             Spacer()
             

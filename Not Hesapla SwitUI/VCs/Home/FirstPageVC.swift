@@ -38,8 +38,8 @@ struct FirstPageVC: View {
                 isPresented = true
             } label: {
                 Text("Başlayalım")
-                    .padding(.vertical, 15)
-                    .padding(.horizontal, 30)
+                    .padding()
+                    .padding(.horizontal)
                     .font(Font.system(size: 20))
             }
             .background(Color(.blue))

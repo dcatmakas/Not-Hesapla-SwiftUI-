@@ -14,7 +14,7 @@ struct NewCalculateVC: View {
     var body: some View {
         
         NavigationView {
-            VStack() {
+            VStack {
                 
                 TextField("Ders", text: $text)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
