@@ -13,40 +13,38 @@ struct NewCalculateVC: View {
     
     var body: some View {
         
-        NavigationView {
-            VStack {
+        VStack {
                 
-                TextField("Ders", text: $text)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 20)
+            TextField("Ders", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.horizontal, 30)
+                .padding(.vertical, 20)
                 
-                TextField("Vize Notu", text: $text)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 20)
+            TextField("Vize Notu", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.horizontal, 30)
+                .padding(.vertical, 20)
                 
-                TextField("Final Notu", text: $text)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 20)
+            TextField("Final Notu", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.horizontal, 30)
+                .padding(.vertical, 20)
                 
-                Spacer()
+            Spacer()
                 
-                Button {
-                    print("hello")
-                } label: {
-                    Text("Hesapla")
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(RoundedRectangle(cornerRadius: 20).fill(.green).frame(width: 200, height: 60))
-                }
-                Spacer()
-                
+            Button {
+                print("hello")
+            } label: {
+                Text("Hesapla")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(RoundedRectangle(cornerRadius: 20).fill(.green).frame(width: 200, height: 60))
             }
-            .navigationTitle("Yeni Hesaplama")
-            .padding()
+            Spacer()
+            
         }
+        .navigationTitle("Yeni Hesaplama")
+        .padding()
     }
 }
 

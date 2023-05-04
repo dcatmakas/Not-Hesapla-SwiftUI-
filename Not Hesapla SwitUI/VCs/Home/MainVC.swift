@@ -72,7 +72,7 @@ struct ExtractedView: View {
             .padding(.horizontal)
             .padding(.vertical, 10)
             
-            NavigationLink(destination: NewCalculateVC()) {
+            NavigationLink(destination: LessonsVC()) {
                 Text("Derslerim")
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity, maxHeight: 170)

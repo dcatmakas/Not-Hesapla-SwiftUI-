@@ -11,7 +11,7 @@ private var lessons = ["mat", "fen", "istatistik"]
 
 struct LessonsVC: View {
     var body: some View {
-        NavigationView {
+        VStack {
             List {
                 ForEach(lessons, id: \.self) { lesson in
                     NavigationLink(destination: LessonDetail(lesson: lesson)) {
@@ -22,8 +22,8 @@ struct LessonsVC: View {
                     lessons.remove(atOffsets: indexSet)
                 }
             }
-            .navigationTitle("Derslerim")
         }
+        .navigationTitle("Derslerim")
     }
 }
 
