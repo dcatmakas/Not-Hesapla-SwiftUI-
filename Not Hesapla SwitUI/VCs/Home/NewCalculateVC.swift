@@ -13,6 +13,7 @@ struct NewCalculateVC: View {
     @State private var midtermText: String = ""
     @State private var finalText: String = ""
     @State private var extraText: String = ""
+    @State private var isTextFieldHidden = true
     
     var selectedLesson : Lesson?
     
@@ -64,10 +65,33 @@ struct NewCalculateVC: View {
     func calculate() {
         guard let selectedLesson = self.selectedLesson else {return}
                 
-        if lessonText != "" && midtermText != "" && finalText != "" {
-            
-            
+        if isTextFieldHidden {
+            if lessonText != "" && midtermText != "" && finalText != "" {
+                if let vize = Float(midtermText) {
+                    if let final = Float(finalText) {
+                        
+                        let midtermRate = (selectedLesson.midtermRate / 100)
+                        let finalRate = (1 - midtermRate)
+                        let avarage = (vize * midtermRate) + (final * finalRate)
+                        
+                        if avarage <= 100 && avarage >= selectedLesson.passNote {
+                            
+                            let gectiMi = Text("Tebrikler")
+                            
+                        }
+                        
+                    }
+                }
+            }
         }
+    }
+    
+    func hiddenTextField() -> some View {
+        TextField("Bütünleme Notu", text: $extraText)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding(.horizontal, 30)
+            .padding(.vertical, 20)
+            .keyboardType(.numberPad)
     }
     
 }
