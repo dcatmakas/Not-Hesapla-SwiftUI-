@@ -65,7 +65,7 @@ struct ExtractedView: View {
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity, maxHeight: 170)
                     .padding()
-                    .background(Color(.blue))
+                    .background(Color("BlueColor"))
                     .foregroundColor(Color(.white))
                     .cornerRadius(30)
             }
@@ -77,7 +77,7 @@ struct ExtractedView: View {
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity, maxHeight: 170)
                     .padding()
-                    .background(Color(.blue))
+                    .background(Color("BlueColor"))
                     .foregroundColor(Color(.white))
                     .cornerRadius(30)
             }

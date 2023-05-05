@@ -42,7 +42,7 @@ struct FirstPageVC: View {
                     .padding(.horizontal)
                     .font(Font.system(size: 20))
             }
-            .background(Color(.blue))
+            .background(Color("BlueColor"))
             .foregroundColor(Color(.white))
             .cornerRadius(16)
             Spacer()
